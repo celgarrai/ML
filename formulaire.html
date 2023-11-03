@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire de prédiction</title>
+</head>
+<body>
+    <h1>Formulaire de prédiction</h1>
+    <form method="POST" action="/predict">
+        <label for="loan_amnt">Montant du prêt :</label>
+        <input type="text" name="loan_amnt" value="" required><br><br>
+
+        <label for="term">Terme :</label>
+        <input type="text" name="term" value="" required><br><br>
+
+        <label for="int_rate">Taux d'intérêt :</label>
+        <input type="text" name="int_rate" value="" required><br><br>
+
+        <label for="grade">Grade :</label>
+        <input type="text" name="grade" value="" required><br><br>
+
+        <label for="emp_length">Années d'expérience :</label>
+        <input type="text" name="emp_length" value="" required><br><br>
+
+        <label for="annual_inc">Revenu annuel :</label>
+        <input type="text" name="annual_inc" value="" required><br><br>
+
+        <label for="dti">DTI (Ratio dette/revenu) :</label>
+        <input type="text" name="dti" value="" required><br><br>
+
+        <label for="delinq_2yrs">Délinquances en 2 ans :</label>
+        <input type="text" name="delinq_2yrs" value="" required><br><br>
+
+        <label for="earliest_cr_line">Date de la première ligne de crédit :</label>
+        <input type="text" name="earliest_cr_line" value="" required><br><br>
+
+        <label for="inq_last_6mths">Enquêtes sur les 6 derniers mois :</label>
+        <input type="text" name="inq_last_6mths" value="" required><br><br>
+
+        <label for="open_acc">Nombre de comptes ouverts :</label>
+        <input type="text" name="open_acc" value="" required><br><br>
+
+        <label for="pub_rec">Nombre de faillites publiques :</label>
+        <input type="text" name="pub_rec" value="" required><br><br>
+
+        <label for="revol_bal">Solde révolu :</label>
+        <input type="text" name="revol_bal" value="" required><br><br>
+
+        <label for="revol_util">Taux d'utilisation des crédits révolus :</label>
+        <input type="text" name="revol_util" value="" required><br><br>
+
+        <label for="total_acc">Nombre total de comptes :</label>
+        <input type="text" name="total_acc" value="" required><br><br>
+
+        <label for="last_credit_pull_d">Date du dernier retrait de crédit :</label>
+        <input type="text" name="last_credit_pull_d" value="" required><br><br>
+
+        <label for="last_fico_range_high">Dernier score FICO élevé :</label>
+        <input type="text" name="last_fico_range_high" value="" required><br><br>
+
+        <label for="fico_score">Score FICO :</label>
+        <input type="text" name="fico_score" value="" required><br><br>
+
+        <label for="Charged_Off">Charged Off :</label>
+        <input type="text" name="Charged_Off" value="" required><br><br>
+
+        <label for="home_ownership_OTHER">Home Ownership - OTHER :</label>
+        <input type="text" name="home_ownership_OTHER" value="" required><br><br>
+
+        <label for="home_ownership_OWN">Home Ownership - OWN :</label>
+        <input type="text" name="home_ownership_OWN" value="" required><br><br>
+
+        <label for="home_ownership_RENT">Home Ownership - RENT :</label>
+        <input type="text" name="home_ownership_RENT" value="" required><br><br>
+
+        <label for="verification_status_Source Verified">Verification Status - Source Verified :</label>
+        <input type="text" name="verification_status_Source Verified" value="" required><br><br>
+
+        <label for="verification_status_Verified">Verification Status - Verified :</label>
+        <input type="text" name="verification_status_Verified" value="" required><br><br>
+
+        <label for="purpose_credit_card">Purpose - Credit Card :</label>
+        <input type="text" name="purpose_credit_card" value="" required><br><br>
+
+        <label for="purpose_debt_consolidation">Purpose - Debt Consolidation :</label>
+        <input type="text" name="purpose_debt_consolidation" value="" required><br><br>
+
+        <label for="purpose_educational">Purpose - Educational :</label>
+        <input type="text" name="purpose_educational" value="" required><br><br>
+
+        <label for="purpose_home_improvement">Purpose - Home Improvement :</label>
+        <input type="text" name="purpose_home_improvement" value="" required><br><br>
+
+        <label for="purpose_house">Purpose - House :</label>
+        <input type="text" name="purpose_house" value="" required><br><br>
+
+        <label for="purpose_major_purchase">Purpose - Major Purchase :</label>
+        <input type="text" name="purpose_major_purchase" value="" required><br><br>
+
+        <label for="purpose_medical">Purpose - Medical :</label>
+        <input type="text" name="purpose_medical" value="" required><br><br>
+
+        <label for="purpose_moving">Purpose - Moving :</label>
+        <input type="text" name="purpose_moving" value="" required><br><br>
+
+        <label for="purpose_other">Purpose - Other :</label>
+        <input type="text" name="purpose_other" value="" required><br><br>
+
+        <label for="purpose_renewable_energy">Purpose - Renewable Energy :</label>
+        <input type="text" name="purpose_renewable_energy" value="" required><br><br>
+
+        <label for="purpose_small_business">Purpose - Small Business :</label>
+        <input type="text" name="purpose_small_business" value="" required><br><br>
+
+        <label for="purpose_vacation">Purpose - Vacation :</label>
+        <input type="text" name="purpose_vacation" value="" required><br><br>
+
+        <label for="purpose_wedding">Purpose - Wedding :</label>
+        <input type="text" name="purpose_wedding" value="" required><br><br>
+
+        <label for="addr_state_AL">State - AL :</label>
+        <input type="text" name="addr_state_AL" value="" required><br><br>
+
+        <label for="addr_state_AR">State - AR :</label>
+        <input type="text" name="addr_state_AR" value="" required><br><br>
+
+        <label for="addr_state_AZ">State - AZ :</label>
+        <input type="text" name="addr_state_AZ" value="" required><br><br>
+
+        <label for="addr_state_CA">State - CA :</label>
+        <input type="text" name="addr_state_CA" value="" required><br><br>
+
+        <label for="addr_state_CO">State - CO :</label>
+        <input type="text" name="addr_state_CO" value="" required><br><br>
+
+        <label for="addr_state_CT">State - CT :</label>
+        <input type="text" name="addr_state_CT" value="" required><br><br>
+
+        <label for="addr_state_DC">State - DC :</label>
+        <input type="text" name="addr_state_DC" value="" required><br><br>
+
+        <label for="addr_state_DE">State - DE :</label>
+        <input type="text" name="addr_state_DE" value="" required><br><br>
+
+        <label for="addr_state_FL">State - FL :</label>
+        <input type="text" name="addr_state_FL" value="" required><br><br>
+
+        <label for="addr_state_GA">State - GA :</label>
+        <input type="text" name="addr_state_GA" value="" required><br><br>
+
+        <label for="addr_state_HI">State - HI :</label>
+        <input type="text" name="addr_state_HI" value="" required><br><br>
+
+        <label for="addr_state_IA">State - IA :</label>
+        <input type="text" name="addr_state_IA" value="" required><br><br>
+
+        <label for="addr_state_ID">State - ID :</label>
+        <input type="text" name="addr_state_ID" value="" required><br><br>
+
+        <label for="addr_state_IL">State - IL :</label>
+        <input type="text" name="addr_state_IL" value="" required><br><br>
+
+        <label for="addr_state_IN">State - IN :</label>
+        <input type="text" name="addr_state_IN" value="" required><br><br>
+
+        <label for="addr_state_KS">State - KS :</label>
+        <input type="text" name="addr_state_KS" value="" required><br><br>
+
+        <label for="addr_state_KY">State - KY :</label>
+        <input type="text" name="addr_state_KY" value="" required><br><br>
+
+        <label for="addr_state_LA">State - LA :</label>
+        <input type="text" name="addr_state_LA" value="" required><br><br>
+
+        <label for="addr_state_MA">State - MA :</label>
+        <input type="text" name="addr_state_MA" value="" required><br><br>
+
+        <label for="addr_state_MD">State - MD :</label>
+        <input type="text" name="addr_state_MD" value="" required><br><br>
+
+        <label for="addr_state_ME">State - ME :</label>
+        <input type="text" name="addr_state_ME" value="" required><br><br>
+
+        <label for="addr_state_MI">State - MI :</label>
+        <input type="text" name="addr_state_MI" value="" required><br><br>
+
+        <label for="addr_state_MN">State - MN :</label>
+        <input type="text" name="addr_state_MN" value="" required><br><br>
+
+        <label for="addr_state_MO">State - MO :</label>
+        <input type="text" name="addr_state_MO" value="" required><br><br>
+
+        <label for="addr_state_MS">State - MS :</label>
+        <input type="text" name="addr_state_MS" value="" required><br><br>
+
+        <label for="addr_state_MT">State - MT :</label>
+        <input type="text" name="addr_state_MT" value="" required><br><br>
+
+        <label for="addr_state_NC">State - NC :</label>
+        <input type="text" name="addr_state_NC" value="" required><br><br>
+
+        <label for="addr_state_NE">State - NE :</label>
+        <input type="text" name="addr_state_NE" value="" required><br><br>
+
