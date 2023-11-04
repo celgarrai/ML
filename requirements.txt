@@ -1,0 +1,5 @@
+pip install xgboost
+pip install --user -U scikit-learn==1.2.1
+pip install pandas
+pip install joblib
+pip install numpy
