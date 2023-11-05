@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Charger vos modèles et scaler à partir des fichiers .pkl
 conservative_model = joblib.load('model_ConservativeInvestors.pkl')
-moderate_risk_model = joblib.load('model_ModerateRiskInvestors.pkl')
+#moderate_risk_model = joblib.load('model_ModerateRiskInvestors.pkl')
 scaler = joblib.load('process_scaler.pkl')
 
 @app.route('/')
@@ -127,8 +127,8 @@ def predict():
 
     scaled_data = scaler.transform([input_data])
     conservative_prediction = conservative_model.predict(scaled_data)
-    moderate_risk_prediction = moderate_risk_model.predict(scaled_data)
+    #moderate_risk_prediction = moderate_risk_model.predict(scaled_data)
     
-    return render_template('result.html', conservative=conservative_prediction[0], moderate_risk=moderate_risk_prediction[0])
+    return render_template('result.html', conservative=conservative_prediction[0])
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
