@@ -7,9 +7,9 @@ from datetime import datetime  # Importez datetime
 app = Flask(__name__)
 
 # Charger vos modèles et scaler à partir des fichiers .pkl
-conservative_model = joblib.load('models/model_ConservativeInvestors.pkl')
-moderate_risk_model = joblib.load('models/model_ModerateRiskInvestors.pkl')
-scaler = joblib.load('models/process_scaler.pkl')
+conservative_model = joblib.load('model_ConservativeInvestors.pkl')
+moderate_risk_model = joblib.load('model_ModerateRiskInvestors.pkl')
+scaler = joblib.load('process_scaler.pkl')
 
 @app.route('/')
 def formulaire():
