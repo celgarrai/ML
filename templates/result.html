@@ -5,7 +5,12 @@
 </head>
 <body>
     <h1>Résultats de prédiction</h1>
-    <p>Résultat pour le modèle conservateur : {{ conservative }}</p>
-   <!-- <p>Résultat pour le modèle à risque modéré : {{ moderate_risk }}</p>-->
+    {% if conservative == 0 %}
+    <p>Crédit accepté</p>
+    {% elif conservative == 1 %}
+    <p>Crédit refusé</p>
+    {% else %}
+    <p>Résultat inconnu</p>
+    {% endif %}
 </body>
 </html>
