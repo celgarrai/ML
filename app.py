@@ -10,8 +10,7 @@ app = Flask(__name__)
 conservative_model = joblib.load('model_ConservativeInvestors.pkl')
 moderate_risk_model = joblib.load('model_ModerateRiskInvestors.pkl')
 scaler = joblib.load('process_scaler.pkl')
-print('The nltk version is {}.'.format(nltk.__version__))
-print('The scikit-learn version is {}.'.format(sklearn.__version__))
+
 @app.route('/')
 def formulaire():
     return render_template('formulaire.html')
